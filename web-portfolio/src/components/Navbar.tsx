@@ -7,11 +7,12 @@ export default function Navbar() {
   return (
     <nav className="w-full fixed top-0 left-0 bg-white z-50 border-b border-gray-100">
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
-        <Link href="/" className="font-bold text-xl tracking-tight text-black">uzzielvdz</Link>
+        <Link href="/" className="font-bold text-xl tracking-tight text-black">uzzielvdz.com</Link>
         <div className="hidden md:flex space-x-8">
           <Link href="/works" className="text-gray-800 hover:underline">Works</Link>
           <Link href="/blog" className="text-gray-800 hover:underline">Blog</Link>
           <Link href="/contact" className="text-gray-800 hover:underline">Contact</Link>
+          <Link href="/contact" className="text-gray-800 hover:underline">Education</Link>
         </div>
         <button
           className="md:hidden flex flex-col justify-center items-center w-8 h-8 focus:outline-none"
