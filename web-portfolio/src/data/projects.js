@@ -1,12 +1,13 @@
 export const projects = [
   {
     id: 1,
-    title: "Designing Dashboards",
-    year: 2020,
-    category: "Dashboard",
+    title: "GithubUserActivity",
+    year: 2024,
+    category: "CLI",
     image: "/images/dashboard.webp",
-    description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+    description: "This CLI application fetches and displays recent GitHub activity for a specified user. By entering a username, users can view events like commits, issues, and stars. It serves as a practical tool to enhance skills in API usage and JSON handling without external libraries.",
     featured: true,
+    githubUrl: "https://github.com/uzzielvdz/GitHubUserActivity",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export const projects = [
     image: "/images/portrait.webp",
     description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
     featured: true,
+    githubUrl: "https://github.com/tuusuario/portraits-project",
   },
   {
     id: 3,
@@ -25,5 +27,6 @@ export const projects = [
     image: "/images/malayalam.webp",
     description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
     featured: true,
+    githubUrl: "https://github.com/tuusuario/malayalam-type",
   },
 ]; 
