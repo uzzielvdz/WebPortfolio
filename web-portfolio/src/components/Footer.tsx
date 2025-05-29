@@ -2,19 +2,22 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="w-full py-6 flex justify-end items-center border-t border-gray-100 mt-8 pr-6">
+    <footer className="w-full py-6 flex justify-between items-center border-t border-gray-100 mt-8 px-6">
+      <div className="text-gray-500 text-sm">
+        © 2025 Uzziel Valdez. All rights reserved.
+      </div>
       <div className="flex space-x-4">
-        <Link href="https://instagram.com" target="_blank" aria-label="Instagram" className="text-black hover:opacity-70">
-          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4"><rect width="18" height="18" x="3" y="3" rx="5" strokeWidth="2"/><circle cx="12" cy="12" r="4" strokeWidth="2"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        <Link href="https://instagram.com/tuusuario" target="_blank" aria-label="Instagram" className="text-gray-500 hover:text-gray-600 transition-colors">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-instagram w-4 h-4"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
         </Link>
-        <Link href="https://x.com" target="_blank" aria-label="X (Twitter)" className="text-black hover:opacity-70">
-          <svg width="20" height="20" viewBox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4"><path d="M1199.61 0H944.726L599.805 505.27L254.884 0H0L492.13 704.13L0 1227H254.884L599.805 821.73L944.726 1227H1199.61L707.48 522.87L1199.61 0ZM307.5 111.5L599.805 540.5L892.11 111.5H307.5ZM307.5 1115.5L599.805 686.5L892.11 1115.5H307.5Z" fill="currentColor"/></svg>
+        <Link href="https://twitter.com/tuusuario" target="_blank" aria-label="Twitter" className="text-gray-500 hover:text-gray-600 transition-colors">
+           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="feather feather-twitter w-4 h-4"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3c0 2.12-1.05 4.16-3.14 5.54C7.34 15.17 5.08 14.56 3 13.93c-.65 1.15-.86 2.35-.66 3.54 1 1.74 2.65 3.23 4.58 4.09A10.96 10.96 0 0 1 3 22c2.22 0 4.2-.8 5.75-2.25C14.86 19.81 20.75 15.01 20.75 10.75c0-.15-.02-.3-.03-.45A10.9 10.9 0 0 0 23 3z"></path></svg>
         </Link>
-        <Link href="https://linkedin.com" target="_blank" aria-label="LinkedIn" className="text-black hover:opacity-70">
-          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4"><rect x="4" y="4" width="16" height="16" rx="2" strokeWidth="2"/><path d="M8 11v5M8 8v.01" strokeWidth="2" strokeLinecap="round"/><path d="M12 16v-3a2 2 0 1 1 4 0v3" strokeWidth="2"/></svg>
+        <Link href="https://linkedin.com/in/tuusuario" target="_blank" aria-label="LinkedIn" className="text-gray-500 hover:text-gray-600 transition-colors">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="feather feather-linkedin w-4 h-4"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
         </Link>
-        <Link href="https://github.com" target="_blank" aria-label="GitHub" className="text-black hover:opacity-70">
-          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85.004 1.71.12 2.51.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+        <Link href="https://github.com/tuusuario" target="_blank" aria-label="GitHub" className="text-gray-500 hover:text-gray-600 transition-colors">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="feather feather-github w-4 h-4"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 3s-1.05-.33-3.44 1.35a12.42 12.42 0 0 0-6.88 0C6.46 2.66 5.42 3 5.42 3S5 4.17 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7a3.37 3.37 0 0 0-.94 2.61V22m-3.14-6c-.73 1-1.45 1.5-1.45 1.5"></path></svg>
         </Link>
       </div>
     </footer>

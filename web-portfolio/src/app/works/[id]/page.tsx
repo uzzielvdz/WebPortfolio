@@ -63,10 +63,25 @@ export default async function ProjectPage({ params }: { params: { id: string } }
         </div>
 
         {/* Descripción del proyecto */}
-        <div className="prose lg:prose-xl max-w-none text-gray-700">
+        <div className="prose lg:prose-xl max-w-none text-gray-700 mb-8">
            <p>{project.description}</p>
            {/* Aquí podrías agregar más detalles o contenido Markdown si quisieras */}
         </div>
+
+        {/* Sección de Tecnologías */}
+        {project.technologies && project.technologies.length > 0 && (
+          <div className="mt-6">
+            <h3 className="text-lg font-semibold text-gray-800 mb-2">Tecnologías:</h3>
+            <div className="flex flex-wrap gap-2">
+              {project.technologies.map((tech: string) => (
+                <span key={tech} className="bg-gray-200 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full">
+                  {tech}
+                </span>
+              ))
+              }
+            </div>
+          </div>
+        )}
 
       </section>
       <Footer />
