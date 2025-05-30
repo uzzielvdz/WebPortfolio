@@ -42,28 +42,30 @@ export default async function BlogPage() {
   return (
     <main className="min-h-screen bg-white flex flex-col">
       <Navbar />
-      <section className="max-w-5xl mx-auto px-4 py-8 mt-16 w-full">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Blog</h1>
-        {
-          posts.length === 0 ? (
-            <div className="text-center text-gray-600 text-sm mt-10">
-              <p>Oh, it's void here...</p>
-            </div>
-          ) : (
-            <div>
-              {posts.map((post, index) => (
-                <div key={post.slug}>
-                  <Link href={`/blog/${post.slug}`}>
-                    <PostCard post={post} />
-                  </Link>
-                  {index < posts.length - 1 && (
-                    <hr className="my-6 border-gray-200" />
-                  )}
-                </div>
-              ))}
-            </div>
-          )
-        }
+      <section className="w-full py-20 mt-0 min-h-screen">
+        <div className="max-w-6xl mx-auto px-4">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Blog</h1>
+          {
+            posts.length === 0 ? (
+              <div className="text-center text-gray-600 text-sm mt-10">
+                <p>Oh, it's void here...</p>
+              </div>
+            ) : (
+              <div className="flex flex-wrap -mx-4">
+                {posts.map((post, index) => (
+                  <div key={post.slug} className="w-full md:w-1/2 px-4 mb-8">
+                    <Link href={`/blog/${post.slug}`}>
+                      <PostCard post={post} />
+                    </Link>
+                    {index < posts.length - 1 && (
+                      <hr className="my-6 border-gray-200" />
+                    )}
+                  </div>
+                ))}
+              </div>
+            )
+          }
+        </div>
       </section>
       <Footer />
     </main>

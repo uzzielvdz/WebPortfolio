@@ -41,13 +41,15 @@ export default async function PostPage({ params }: { params: { slug: string } })
   return (
     <main className="min-h-screen bg-white flex flex-col">
       <Navbar />
-      <section className="max-w-4xl mx-auto px-4 py-8 mt-16 w-full">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">{post.title}</h1>
-        <div className="text-sm text-gray-600 mb-6">
-          {post.date} &nbsp; | &nbsp; {post.tags?.join(", ")}
-        </div>
-        <div className="prose lg:prose-xl max-w-none">
-          <Markdown>{post.content}</Markdown>
+      <section className="w-full py-8 mt-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">{post.title}</h1>
+          <div className="text-sm text-gray-600 mb-6">
+            {post.date} &nbsp; | &nbsp; {post.tags?.join(", ")}
+          </div>
+          <div className="prose lg:prose-xl max-w-none">
+            <Markdown>{post.content}</Markdown>
+          </div>
         </div>
       </section>
       <Footer />
